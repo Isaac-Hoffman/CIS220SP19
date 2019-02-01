@@ -1,3 +1,3 @@
 # CIS220SP19
-Isaac Hoffman
-Ozarks Technical Community College
+#Isaac Hoffman
+#Ozarks Technical Community College
