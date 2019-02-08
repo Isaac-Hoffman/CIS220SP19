@@ -13,7 +13,7 @@ public class Basket : MonoBehaviour
         // find a reference to ScoreCounter
 	    GameObject scoreGO = GameObject.Find("ScoreCounter");
         // get the text component from the GameObject
-	    scoreGO = scoreGO.GetComponent<Text>();
+	    scoreGT = scoreGO.GetComponent<Text>();
         //set starting num of pts to 0
 	    scoreGT.text = "0";
 	}
@@ -44,6 +44,11 @@ public class Basket : MonoBehaviour
             score += 100;
             // convert score back to string and display it
             scoreGT.text = score.ToString();
+            // track high score
+            if (score > HighScore.score)
+            {
+                HighScore.score = score;
+            }
         }
     }
 }
